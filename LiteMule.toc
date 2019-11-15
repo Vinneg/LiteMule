@@ -1,0 +1,8 @@
+## Interface:11302
+## Title: Lite Mile
+## Author: Vinneg
+## Notes: Awesome mule lite addon
+## SavedVariables:
+
+LiteMule.lua
+LiteMule.xml
