@@ -4,23 +4,66 @@
     <Frame name="LiteMule_frame" parent="UIParent" hidden="true" enableMouse="true" toplevel="true" movable="false"
            clampedToScreen="true">
         <Size>
-            <AbsDimension x="100" y="250"/>
+            <AbsDimension x="50" y="90"/>
         </Size>
         <Anchors>
-            <Anchor point="LEFT"/>
+            <Anchor point="Left"/>
         </Anchors>
         <Backdrop bgFile="Interface\Tooltips\UI-Tooltip-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border"
                   tile="true">
             <Color r="0" g="0" b="0"/>
             <BackgroundInsets>
-                <AbsInset left="0" right="12" top="12" bottom="12"/>
+                <AbsInset left="0" right="0" top="0" bottom="0"/>
             </BackgroundInsets>
             <TileSize>
-                <AbsValue val="32"/>
+                <AbsValue val="16"/>
             </TileSize>
             <EdgeSize>
-                <AbsValue val="32"/>
+                <AbsValue val="16"/>
             </EdgeSize>
         </Backdrop>
+        <Layers>
+            <Layer level="OVERLAY">
+                <Texture name="LiteMule_mark2" alphaMode="DISABLE">
+                    <Color r="0" g="1" b="0"/>
+                    <Size>
+                        <AbsDimension x="20" y="20"/>
+                    </Size>
+                    <Anchors>
+                        <Anchor point="CENTER">
+                            <Offset>
+                                <AbsDimension x="0" y="0"/>
+                            </Offset>
+                        </Anchor>
+                    </Anchors>
+                </Texture>
+                <Texture name="LiteMule_mark1" alphaMode="DISABLE">
+                    <Color r="1" g="0" b="0"/>
+                    <Size>
+                        <AbsDimension x="20" y="20"/>
+                    </Size>
+                    <Anchors>
+                        <Anchor point="BOTTOM" relativePoint="TOP" relativeTo="LiteMule_mark2">
+                            <Offset>
+                                <AbsDimension x="0" y="5"/>
+                            </Offset>
+                        </Anchor>
+                    </Anchors>
+                </Texture>
+                <Texture name="LiteMule_mark3" alphaMode="DISABLE">
+                    <Color r="0" g="0" b="1"/>
+                    <Size>
+                        <AbsDimension x="20" y="20"/>
+                    </Size>
+                    <Anchors>
+                        <Anchor point="TOP" relativePoint="BOTTOM" relativeTo="LiteMule_mark2">
+                            <Offset>
+                                <AbsDimension x="0" y="-5"/>
+                            </Offset>
+                        </Anchor>
+                    </Anchors>
+                </Texture>
+            </Layer>
+        </Layers>
     </Frame>
 </Ui>

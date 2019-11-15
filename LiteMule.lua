@@ -1,8 +1,6 @@
 SLASH_LITEMULE1 = "/mule";
 
 LiteMule_globals = {
-    showOn = { 1, 2, 3, 5, 10, 20, 30 },
-    channel = "RAID_WARNING",
     commands = {
         START = "start"
     },
